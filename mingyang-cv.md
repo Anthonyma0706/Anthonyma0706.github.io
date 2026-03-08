@@ -16,7 +16,7 @@
 
 ### Harvard University
 - **M.S. in Quantitative Genetics / Computational Biology**
-- Research: "Machine Learning For Suggesting Personalized Intervention For Obesity"
+- Thesis: Multimodal representation learning for spatial transcriptomics in computational pathology (Mahmood Lab)
 
 ### McGill University
 - **B.Sc. Honours in Computer Science & Biology**
