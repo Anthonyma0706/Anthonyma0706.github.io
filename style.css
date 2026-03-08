@@ -5,6 +5,7 @@
 
 :root {
   --serif: "Cormorant Garamond", "Georgia", serif;
+  --serif-zh: "Noto Serif SC", "Songti SC", "STSong", serif;
   --sans: "DM Sans", -apple-system, BlinkMacSystemFont, sans-serif;
   --blue: #2563EB;
   --blue-muted: #3B82F6;
@@ -345,6 +346,67 @@ h2 {
 .footer-copy {
   font-size: 12px;
   color: var(--light);
+}
+
+/* ---- Language Toggle ---- */
+
+.lang-btn {
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--light);
+  background: none;
+  border: 1px solid #D5D5D5;
+  border-radius: 100px;
+  padding: 4px 12px;
+  cursor: pointer;
+  transition: all var(--transition);
+  letter-spacing: 0.3px;
+  margin-left: auto;
+  margin-right: 12px;
+}
+
+.lang-btn:hover {
+  color: var(--ink);
+  border-color: var(--ink);
+}
+
+/* Language visibility — both in DOM for SEO, toggle display */
+.lang-zh { display: none; }
+.lang-en { display: inline; }
+
+body[data-lang="zh"] .lang-zh { display: inline; }
+body[data-lang="zh"] .lang-en { display: none; }
+
+/* Chinese typography overrides */
+body[data-lang="zh"] .hero-right h1 {
+  font-family: var(--serif-zh);
+  font-size: 48px;
+  letter-spacing: 4px;
+}
+
+body[data-lang="zh"] .nav-logo {
+  font-family: var(--serif-zh);
+  letter-spacing: 1px;
+}
+
+body[data-lang="zh"] h2 {
+  font-family: var(--serif-zh);
+}
+
+body[data-lang="zh"] .footer-text {
+  font-family: var(--serif-zh);
+  font-style: normal;
+}
+
+/* Hidden SEO block — always in DOM, invisible */
+.seo-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
 }
 
 /* ---- Animations ---- */

@@ -3,23 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mingyang Ma</title>
-  <meta name="description" content="Harvard & MIT researcher. AI, computational biology, education.">
+  <title>Mingyang Ma 马铭阳 — Harvard & MIT Researcher</title>
+  <meta name="description" content="Mingyang (Anthony) Ma 马铭阳 — Harvard M.S. in Quantitative Genetics, MIT CSAIL researcher. AI, computational biology, and education technology. 哈佛大学计算生物学硕士，MIT研究员。">
+  <meta name="keywords" content="Mingyang Ma, 马铭阳, Anthony Ma, Harvard, MIT, CSAIL, computational biology, AI, machine learning, education, LeadLearning, Faisal Mahmood, Manolis Kellis, McGill">
+  <meta property="og:title" content="Mingyang Ma 马铭阳 — Harvard & MIT Researcher">
+  <meta property="og:description" content="AI, Computational Biology & Education. Harvard M.S., MIT CSAIL, Harvard Medical School.">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://anthonyma0706.github.io">
+  <link rel="canonical" href="https://anthonyma0706.github.io">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500&family=Noto+Serif+SC:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Structured Data for SEO — both languages indexed -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mingyang Ma",
+    "alternateName": ["马铭阳", "Anthony Ma", "Mingyang (Anthony) Ma"],
+    "url": "https://anthonyma0706.github.io",
+    "sameAs": [
+      "https://github.com/anthonyma0706"
+    ],
+    "jobTitle": "Researcher & Entrepreneur",
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Harvard University",
+        "department": "Quantitative Genetics & Computational Biology"
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "McGill University",
+        "department": "Computer Science & Biology"
+      }
+    ],
+    "affiliation": [
+      {"@type": "Organization", "name": "MIT CSAIL"},
+      {"@type": "Organization", "name": "Broad Institute of MIT and Harvard"},
+      {"@type": "Organization", "name": "Harvard Medical School"},
+      {"@type": "Organization", "name": "LeadLearning"}
+    ],
+    "knowsAbout": ["Artificial Intelligence", "Machine Learning", "Computational Biology", "Computational Pathology", "Education Technology"]
+  }
+  </script>
 </head>
-<body>
+<body data-lang="en">
 
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <a href="#" class="nav-logo">Mingyang Ma</a>
+      <a href="#" class="nav-logo">
+        <span class="i18n" data-en="Mingyang Ma" data-zh="马铭阳"></span>
+      </a>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about"><span class="i18n" data-en="About" data-zh="关于"></span></a></li>
+        <li><a href="#projects"><span class="i18n" data-en="Projects" data-zh="项目"></span></a></li>
+        <li><a href="#contact"><span class="i18n" data-en="Contact" data-zh="联系"></span></a></li>
       </ul>
+      <button class="lang-btn" id="langBtn" aria-label="Switch language">中文</button>
       <button class="nav-toggle" id="navToggle" aria-label="Menu">
         <span></span><span></span>
       </button>
@@ -35,24 +78,29 @@
         </div>
       </div>
       <div class="hero-right">
-        <h1 class="fade-in">Mingyang<br><em>(Anthony)</em> Ma</h1>
-        <p class="hero-sub fade-in">Researcher & Builder</p>
+        <h1 class="fade-in">
+          <span class="lang-en">Mingyang<br><em>(Anthony)</em> Ma</span>
+          <span class="lang-zh">马铭阳</span>
+        </h1>
+        <p class="hero-sub fade-in">
+          <span class="i18n" data-en="Researcher & Builder" data-zh="研究者 · 创业者"></span>
+        </p>
         <div class="hero-exp fade-in">
           <div class="exp-row">
             <span class="exp-where">Harvard</span>
-            <span class="exp-what">M.S. Quantitative Genetics · Computational Biology</span>
+            <span class="exp-what"><span class="i18n" data-en="M.S. Quantitative Genetics · Computational Biology" data-zh="计算生物学与量化基因学硕士"></span></span>
           </div>
           <div class="exp-row">
             <span class="exp-where">Harvard Med</span>
-            <span class="exp-what">AI for Pathology — Mahmood Lab</span>
+            <span class="exp-what"><span class="i18n" data-en="AI for Pathology — Mahmood Lab" data-zh="AI 计算病理学 — Mahmood 实验室"></span></span>
           </div>
           <div class="exp-row">
             <span class="exp-where">MIT CSAIL</span>
-            <span class="exp-what">Computational Biology — Kellis Lab, Broad Institute</span>
+            <span class="exp-what"><span class="i18n" data-en="Computational Biology — Kellis Lab, Broad Institute" data-zh="计算生物学 — Kellis 实验室, Broad 研究所"></span></span>
           </div>
           <div class="exp-row">
             <span class="exp-where">McGill</span>
-            <span class="exp-what">B.Sc. Honours — Computer Science & Biology</span>
+            <span class="exp-what"><span class="i18n" data-en="B.Sc. Honours — Computer Science & Biology" data-zh="计算机科学与生物学荣誉学士"></span></span>
           </div>
         </div>
         <div class="hero-links fade-in">
@@ -67,15 +115,25 @@
   <!-- About -->
   <section class="section" id="about">
     <div class="container">
-      <h2 class="fade-in">About</h2>
+      <h2 class="fade-in"><span class="i18n" data-en="About" data-zh="关于我"></span></h2>
       <div class="about-grid">
-        <div class="about-col fade-in">
+        <!-- English -->
+        <div class="about-col lang-en fade-in">
           <p>I work at the intersection of AI, computational biology, and education. From McGill to Harvard to MIT, my research has focused on applying machine learning to complex biological and social systems.</p>
           <p>At Harvard Medical School, I worked with <strong>Prof. Faisal Mahmood</strong> on multimodal representation learning for computational pathology. At MIT, I collaborated with <strong>Prof. Manolis Kellis</strong> at CSAIL and the Broad Institute.</p>
         </div>
-        <div class="about-col fade-in">
+        <div class="about-col lang-en fade-in">
           <p>My master's research explored <em>Machine Learning for Suggesting Personalized Intervention for Obesity</em> — bridging data science with real-world health outcomes.</p>
           <p>Currently, I'm co-founder of <strong>LeadLearning</strong>, applying AI and systems thinking to education — building tools that transform how students learn.</p>
+        </div>
+        <!-- Chinese -->
+        <div class="about-col lang-zh fade-in">
+          <p>我的研究方向横跨 <strong>AI、计算生物学与教育科技</strong>。从麦吉尔大学到哈佛大学再到 MIT，我始终专注于将机器学习应用于复杂的生物与社会系统。</p>
+          <p>在哈佛医学院，我与 <strong>Faisal Mahmood 教授</strong>合作，研究计算病理学中的多模态表征学习。在 MIT，我与 <strong>Manolis Kellis 教授</strong>在 CSAIL 和 Broad 研究所合作开展计算生物学研究。</p>
+        </div>
+        <div class="about-col lang-zh fade-in">
+          <p>硕士研究课题为<em>「基于机器学习的肥胖个性化干预建议」</em>，将数据科学与真实健康结果相结合。</p>
+          <p>目前，我是 <strong>LeadLearning 励聆</strong>的联合创始人，将 AI 与系统思维应用于教育，构建帮助学生提升学习力的工具。</p>
         </div>
       </div>
     </div>
@@ -84,23 +142,23 @@
   <!-- Projects -->
   <section class="section section-alt" id="projects">
     <div class="container">
-      <h2 class="fade-in">Projects</h2>
+      <h2 class="fade-in"><span class="i18n" data-en="Projects" data-zh="项目"></span></h2>
       <div class="projects-list">
         <a href="#" class="project-row fade-in">
           <span class="project-num">01</span>
-          <span class="project-name">Project Title</span>
+          <span class="project-name"><span class="i18n" data-en="Project Title" data-zh="项目名称"></span></span>
           <span class="project-tags"><span class="tag">AI</span><span class="tag">Python</span></span>
           <span class="project-arrow">&rarr;</span>
         </a>
         <a href="#" class="project-row fade-in">
           <span class="project-num">02</span>
-          <span class="project-name">Project Title</span>
+          <span class="project-name"><span class="i18n" data-en="Project Title" data-zh="项目名称"></span></span>
           <span class="project-tags"><span class="tag">EdTech</span><span class="tag">ML</span></span>
           <span class="project-arrow">&rarr;</span>
         </a>
         <a href="#" class="project-row fade-in">
           <span class="project-num">03</span>
-          <span class="project-name">Project Title</span>
+          <span class="project-name"><span class="i18n" data-en="Project Title" data-zh="项目名称"></span></span>
           <span class="project-tags"><span class="tag">Research</span><span class="tag">Data</span></span>
           <span class="project-arrow">&rarr;</span>
         </a>
@@ -111,15 +169,23 @@
   <!-- Contact -->
   <footer class="footer" id="contact">
     <div class="container">
-      <p class="footer-text fade-in">Let's connect</p>
+      <p class="footer-text fade-in">
+        <span class="i18n" data-en="Let's connect" data-zh="欢迎联系"></span>
+      </p>
       <div class="footer-links fade-in">
         <a href="https://github.com/anthonyma0706" target="_blank" rel="noopener">GitHub</a>
         <a href="mailto:your-email@example.com">Email</a>
         <a href="https://twitter.com/your-handle" target="_blank" rel="noopener">X / Twitter</a>
       </div>
-      <p class="footer-copy">&copy; 2026 Mingyang Ma</p>
+      <p class="footer-copy">&copy; 2026 Mingyang Ma 马铭阳</p>
     </div>
   </footer>
+
+  <!-- Hidden SEO content — both languages always in DOM for crawlers -->
+  <div class="seo-only" aria-hidden="true">
+    <h2>马铭阳 Mingyang (Anthony) Ma</h2>
+    <p>哈佛大学计算生物学与量化基因学硕士。麦吉尔大学计算机科学与生物学荣誉学士。前哈佛医学院 AI for Pathology Lab 研究员，MIT CSAIL / Broad Institute 计算生物学研究员。LeadLearning 励聆联合创始人。Harvard University M.S. Quantitative Genetics and Computational Biology. McGill University B.Sc. Honours Computer Science and Biology. Former researcher at Harvard Medical School Mahmood Lab and MIT CSAIL Kellis Lab, Broad Institute of MIT and Harvard.</p>
+  </div>
 
   <script src="main.js"></script>
 </body>

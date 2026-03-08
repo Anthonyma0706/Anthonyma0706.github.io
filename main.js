@@ -1,11 +1,36 @@
 // ============================================
-// 马铭阳 Personal Website — Interactions
+// Mingyang Ma — Interactions + i18n
 // ============================================
 
 document.addEventListener('DOMContentLoaded', () => {
-  // ---- Scroll fade-in animations ----
-  const fadeEls = document.querySelectorAll('.fade-in');
+  // ---- i18n: language toggle ----
+  const body = document.body;
+  const langBtn = document.getElementById('langBtn');
+  let currentLang = 'en';
 
+  function setLang(lang) {
+    currentLang = lang;
+    body.setAttribute('data-lang', lang);
+    document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+
+    // Update all i18n spans
+    document.querySelectorAll('.i18n').forEach((el) => {
+      el.textContent = el.dataset[lang];
+    });
+
+    // Update toggle button text
+    langBtn.textContent = lang === 'en' ? '中文' : 'EN';
+  }
+
+  langBtn.addEventListener('click', () => {
+    setLang(currentLang === 'en' ? 'zh' : 'en');
+  });
+
+  // Init
+  setLang('en');
+
+  // ---- Scroll fade-in ----
+  const fadeEls = document.querySelectorAll('.fade-in');
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -13,10 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.unobserve(entry.target);
       }
     });
-  }, {
-    threshold: 0.15,
-    rootMargin: '0px 0px -40px 0px'
-  });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
 
   fadeEls.forEach((el) => observer.observe(el));
 
@@ -25,43 +47,31 @@ document.addEventListener('DOMContentLoaded', () => {
   const links = document.getElementById('navLinks');
 
   if (toggle && links) {
-    toggle.addEventListener('click', () => {
-      links.classList.toggle('open');
-    });
-
-    // Close menu on link click
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
     links.querySelectorAll('a').forEach((a) => {
-      a.addEventListener('click', () => {
-        links.classList.remove('open');
-      });
+      a.addEventListener('click', () => links.classList.remove('open'));
     });
   }
 
-  // ---- Nav background on scroll ----
+  // ---- Nav shadow on scroll ----
   const nav = document.getElementById('nav');
-  let lastScroll = 0;
-
   window.addEventListener('scroll', () => {
-    const scrollY = window.scrollY;
-
-    if (scrollY > 10) {
-      nav.style.boxShadow = '0 1px 12px rgba(0,0,0,0.08)';
-    } else {
-      nav.style.boxShadow = 'none';
-    }
-
-    lastScroll = scrollY;
+    nav.style.boxShadow = window.scrollY > 10
+      ? '0 1px 12px rgba(0,0,0,0.06)'
+      : 'none';
   }, { passive: true });
 
-  // ---- Smooth scroll for anchor links ----
+  // ---- Smooth scroll ----
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener('click', (e) => {
       e.preventDefault();
       const target = document.querySelector(anchor.getAttribute('href'));
       if (target) {
-        const navHeight = nav ? nav.offsetHeight : 0;
-        const targetPos = target.getBoundingClientRect().top + window.scrollY - navHeight;
-        window.scrollTo({ top: targetPos, behavior: 'smooth' });
+        const offset = nav ? nav.offsetHeight : 0;
+        window.scrollTo({
+          top: target.getBoundingClientRect().top + window.scrollY - offset,
+          behavior: 'smooth'
+        });
       }
     });
   });
