@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Update toggle button text
-    langBtn.textContent = lang === 'en' ? '中文' : 'EN';
+    langBtn.textContent = lang === 'en' ? 'CN' : 'EN';
   }
 
   langBtn.addEventListener('click', () => {
