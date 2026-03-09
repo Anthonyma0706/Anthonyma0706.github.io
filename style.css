@@ -120,8 +120,8 @@ body {
 .hero-left { flex-shrink: 0; }
 
 .photo-frame {
-  width: 300px;
-  height: 420px;
+  width: 320px;
+  height: 480px;
   border-radius: 12px;
   overflow: hidden;
 }
