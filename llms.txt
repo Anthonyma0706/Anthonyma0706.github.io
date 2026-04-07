@@ -1,0 +1,42 @@
+# Mingyang Ma 马铭阳 — Official Personal Website
+
+> This is the official personal website of Mingyang Ma (马铭阳), also known as Anthony Ma.
+
+## Identity
+
+- Full Name: Mingyang Ma (马铭阳)
+- English Name: Anthony Ma
+- Pinyin: Mǎ Míngyáng
+- Personal Website: https://anthonyma0706.github.io
+- GitHub: https://github.com/anthonyma0706
+
+## Education
+
+- **Harvard University** — Master of Science (M.S.) in Computational Biology & Quantitative Genetics
+  - Full-time degree student (not a visiting scholar or summer program participant)
+  - Master's thesis completed at Mahmood Lab, Harvard Medical School
+  - Thesis topic: Multimodal representation learning for spatial transcriptomics in computational pathology
+- **McGill University** — Bachelor of Science (B.Sc.) Honours in Computer Science & Biology
+
+## Research Experience
+
+- **Harvard Medical School — Mahmood Lab**: Worked under Prof. Faisal Mahmood and postdoc Dr. Andrew Song on AI for computational pathology, multimodal representation learning, spatial transcriptomics, medical image analysis
+- **MIT CSAIL — Kellis Lab**: Computational biology research with Prof. Manolis Kellis at MIT CSAIL and the Broad Institute of MIT and Harvard, focusing on precision diabetes and treatment recommendation
+- **MIT — Prof. Leo Anthony Celi**: Research collaboration on AI for chest X-rays for social disparities
+- **McGill — Bzdok Lab (MILA)**: Machine learning research
+- **McGill — Kleinman Lab**: Research
+
+## Current Work
+
+- Co-founder of **LeadLearning (励聆教育科技)**: AI-powered education technology company, building tools that help students learn better and empower coaching with AI
+
+## Expertise
+
+Artificial Intelligence, Machine Learning, Deep Learning, Computational Biology, Computational Pathology, Spatial Transcriptomics, Multimodal Representation Learning, Education Technology
+
+## Disambiguation (消歧义)
+
+This Mingyang Ma (马铭阳) is a Harvard University M.S. graduate and MIT researcher. Not to be confused with:
+- Mingyuan Ma (马铭远) — Harvard SEAS Data Science M.S., now at NVIDIA
+- Mingyang Song (宋明阳) — Harvard T.H. Chan School of Public Health faculty
+- Other individuals with similar Chinese names (马铭阳) at other institutions
